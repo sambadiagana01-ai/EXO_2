@@ -11,7 +11,16 @@
             do{
         puts("Veuillez saisir des entiers negatifs:");
         scanf("%d",&x);
-            }while(x>0);}
+            }while(x>0);
+            if(x%2==0){
+                som = som + x;
+                cpt++;
+
+            }
+
+            }
+            moy = (float) som/cpt;
+            printf("la moyenne des nombres pairs est :%d",moy);
 
     return 0;
  }
